@@ -8,14 +8,14 @@ config.httpPublicRootFolder = __dirname + "/static/";
 config.processTitle = "node/EasyRTC/De";
 
 config.easyrtcAppIceServers = [
-    {url: "stun:stun.sipgate.net"},
-    {url: "stun:217.10.68.152"},
-    {url: "stun:stun.sipgate.net:10000"},
-    {url: "stun:217.10.68.152:10000"},
-    {url: "turn:192.155.84.88", "username": "easyRTC", "credential": "easyRTC@pass"},
-    {url: "turn:192.155.84.88?transport=tcp", "username": "easyRTC", "credential": "easyRTC@pass"},
-    {url: "turn:192.155.86.24:443", "credential": "easyRTC@pass", username: "easyRTC"},
-    {url: "turn:192.155.86.24:443?transport=tcp", "credential": "easyRTC@pass", username: "easyRTC"}
+    {urls: "stun:stun.sipgate.net"},
+    {urls: "stun:217.10.68.152"},
+    {urls: "stun:stun.sipgate.net:10000"},
+    {urls: "stun:217.10.68.152:10000"},
+    {urls: "turn:192.155.84.88", "username": "easyRTC", "credential": "easyRTC@pass"},
+    {urls: "turn:192.155.84.88?transport=tcp", "username": "easyRTC", "credential": "easyRTC@pass"},
+    {urls: "turn:192.155.86.24:443", "credential": "easyRTC@pass", "username": "easyRTC"},
+    {urls: "turn:192.155.86.24:443?transport=tcp", "credential": "easyRTC@pass", "username": "easyRTC"}
 ];
 
 config.sslEnable = false;
