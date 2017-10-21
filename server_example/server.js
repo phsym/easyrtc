@@ -53,7 +53,8 @@ var rtc = easyrtc.listen(app, socketServer, null, function(err, rtcRef) {
     });
 });
 
-//listen on port 8080
-webServer.listen(8080, function () {
-    console.log('listening on http://localhost:8080');
+//Listen on port 8080 or from the one in PORT environment variable
+var port = parseInt(process.env.PORT || "8080");
+webServer.listen(port, function () {
+    console.log('listening on http://localhost:' + port);
 });
